@@ -8,6 +8,7 @@ apiVersion: v1
 data:
     APP_NAME: "pingpong-app"
     PORT: "8080"
+    KAFKA_BROKER: "kafka.kafka"
 
 kind: ConfigMap
 metadata:
@@ -20,7 +21,7 @@ metadata:
     name: pingpong-app
     namespace: pingpong
 spec:
-    replicas: 3
+    replicas: 1
     selector:
       matchLabels:
         app: pingpong-apps
@@ -28,10 +29,10 @@ spec:
       metadata:
         labels:
           app: pingpong-apps
-      spec:
+      spec: 
         containers:
         - name: pingpong-apps
-          image: afsanarozan/exam:v1
+          image: afsanarozan/kafka:test
           ports:
             - containerPort: 3000
           envFrom:
