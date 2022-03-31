@@ -6,7 +6,7 @@ const clientId = "my-app"
 // we can define the list of brokers in the cluster
 const brokers = [process.env.KAFKA_BROKER]
 // this is the topic to which we want to write messages
-const topic = "message-log"
+const topic = "message-kubernetes"
 
 // initialize a new kafka client and initialize a producer from it
 const kafka = new Kafka({ 
