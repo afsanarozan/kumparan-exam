@@ -4,7 +4,8 @@
 - yarn install
 - yarn run start
 
-
+to produce log 
+uncomment in index.js function produce
 
 
 
