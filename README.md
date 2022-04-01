@@ -7,9 +7,6 @@
 to produce log 
 uncomment in index.js function produce
 
- Step 2. Check your containers has been running 
-```console
-
 #### how to use our services
 1. first set .env or configmap to your kafka broker server
 
